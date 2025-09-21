@@ -1,134 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malavika Menon – Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malavika Menon - Cybersecurity & Forensics Portfolio</title>
 
-  <!-- Optional styling with Tailwind CDN -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; }
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
-      background-color: #1e40af;
-      color: #fff;
-      text-decoration: none;
-      transition: background 0.2s;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f8fafc;
+      color: #334155;
     }
-    .btn:hover { background-color: #1d4ed8; }
-    .btn-secondary {
-      background-color: #4b5563;
-    }
-    .btn-secondary:hover {
-      background-color: #374151;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 1.5rem;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
+    section { padding:4rem 1rem; max-width:1200px; margin:0 auto; }
+    h1,h2,h3,h4 { font-weight:600; color:#1e293b; }
+    h1{font-size:3rem;} h2{font-size:2.25rem;} h3{font-size:1.75rem;} h4{font-size:1.25rem;}
 
-<body class="bg-gray-100">
-  <!-- Navbar -->
-  <nav class="bg-gray-800 p-4 flex justify-between items-center">
-    <h1 class="text-white text-xl font-bold">Malavika Menon</h1>
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    a{color:#2563eb;text-decoration:non
 
-  <!-- Hero Section -->
-  <section id="hero" class="bg-blue-500 text-white text-center py-32 min-h-screen flex flex-col justify-center items-center">
-    <h1 class="text-6xl font-bold mb-4">MALAVIKA MENON</h1>
-    <p class="text-2xl max-w-3xl mb-8">
-      Aspiring Cybersecurity Analyst (completing Oct 2025) with hands-on experience in ethical hacking,
-      packet analysis, and incident response simulations.
-    </p>
-    <div class="flex flex-wrap gap-4 justify-center">
-      <a href="#projects" class="btn">View My Work</a>
-      <a href="https://www.linkedin.com/in/malavika-menon-553b7a21a/" target="_blank" class="btn btn-secondary">
-        <i class="fab fa-linkedin mr-2"></i>LinkedIn
-      </a>
-      <!-- ✅ Corrected Resume Link -->
-      <a href="malavika_menon_resume.pdf" target="_blank" class="btn btn-secondary">
-        <i class="fas fa-file-pdf mr-2"></i>Download Resume
-      </a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="p-8 bg-white">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p>
-      Welcome to my portfolio. I’m passionate about cybersecurity and enjoy solving problems related to
-      network security, penetration testing, and digital forensics.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="p-8 bg-gray-50">
-    <h2 class="text-3xl font-bold mb-4">Skills</h2>
-    <ul class="list-disc ml-6">
-      <li>Ethical Hacking</li>
-      <li>Packet Analysis</li>
-      <li>Incident Response</li>
-      <li>Python, HTML, CSS, JavaScript</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="p-8 bg-white">
-    <h2 class="text-3xl font-bold mb-4">Projects</h2>
-    <p>Project details go here.</p>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="p-8 bg-gray-50">
-    <h2 class="text-3xl font-bold mb-4">Experience</h2>
-    <p>Experience details go here.</p>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="p-8 bg-white">
-    <h2 class="text-3xl font-bold mb-4">Education</h2>
-    <p>Education details go here.</p>
-  </section>
-
-  <!-- Certificates -->
-  <section id="certificates" class="p-8 bg-gray-50">
-    <h2 class="text-3xl font-bold mb-4">Certificates</h2>
-    <p>Click below to view certificates:</p>
-    <!-- Add certificate links after uploading them to a "certificates" folder -->
-    <ul class="list-disc ml-6">
-      <li><a href="certificates/aws_certificate.pdf" target="_blank" class="text-blue-600 underline">AWS Certificate</a></li>
-      <li><a href="certificates/cybersecurity_fundamentals.pdf" target="_blank" class="text-blue-600 underline">Cybersecurity Fundamentals</a></li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="p-8 bg-white">
-    <h2 class="text-3xl font-bold mb-4">Contact</h2>
-    <p>Email: your.email@example.com</p>
-  </section>
-
-  <footer class="bg-gray-800 text-white text-center p-4">
-    © 2025 Malavika Menon
-  </footer>
-</body>
-</html>
